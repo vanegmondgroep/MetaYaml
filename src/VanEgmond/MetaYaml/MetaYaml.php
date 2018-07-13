@@ -1,9 +1,9 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml;
+namespace VanEgmond\MetaYaml;
 
-use RomaricDrigon\MetaYaml\SchemaValidator;
-use RomaricDrigon\MetaYaml\Loader\JsonLoader;
+use VanEgmond\MetaYaml\SchemaValidator;
+use VanEgmond\MetaYaml\Loader\JsonLoader;
 
 class MetaYaml
 {

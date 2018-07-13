@@ -1,8 +1,8 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\XsdNodeGenerator;
+namespace VanEgmond\MetaYaml\XsdNodeGenerator;
 
-use RomaricDrigon\MetaYaml\XsdGenerator;
+use VanEgmond\MetaYaml\XsdGenerator;
 
 abstract class XsdNodeGenerator implements XsdNodeGeneratorInterface
 {

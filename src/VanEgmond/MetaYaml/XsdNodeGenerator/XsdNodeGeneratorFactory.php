@@ -1,9 +1,9 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\XsdNodeGenerator;
+namespace VanEgmond\MetaYaml\XsdNodeGenerator;
 
-use RomaricDrigon\MetaYaml\XsdGenerator;
-use RomaricDrigon\MetaYaml\Exception\NodeValidatorException;
+use VanEgmond\MetaYaml\XsdGenerator;
+use VanEgmond\MetaYaml\Exception\NodeValidatorException;
 
 class XsdNodeGeneratorFactory
 {

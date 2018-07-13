@@ -1,6 +1,6 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\Loader;
+namespace VanEgmond\MetaYaml\Loader;
 
 interface LoaderInterface
 {

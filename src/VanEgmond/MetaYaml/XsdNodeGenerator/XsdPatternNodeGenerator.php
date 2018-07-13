@@ -1,6 +1,6 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\XsdNodeGenerator;
+namespace VanEgmond\MetaYaml\XsdNodeGenerator;
 
 class XsdPatternNodeGenerator extends XsdNodeGenerator
 {

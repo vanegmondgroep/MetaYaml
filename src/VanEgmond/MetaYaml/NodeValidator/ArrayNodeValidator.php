@@ -1,8 +1,8 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\NodeValidator;
+namespace VanEgmond\MetaYaml\NodeValidator;
 
-use RomaricDrigon\MetaYaml\Exception\NodeValidatorException;
+use VanEgmond\MetaYaml\Exception\NodeValidatorException;
 
 class ArrayNodeValidator extends NodeValidator
 {

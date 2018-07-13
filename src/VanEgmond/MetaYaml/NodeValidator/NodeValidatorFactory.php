@@ -1,9 +1,9 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\NodeValidator;
+namespace VanEgmond\MetaYaml\NodeValidator;
 
-use RomaricDrigon\MetaYaml\SchemaValidator;
-use RomaricDrigon\MetaYaml\Exception\NodeValidatorException;
+use VanEgmond\MetaYaml\SchemaValidator;
+use VanEgmond\MetaYaml\Exception\NodeValidatorException;
 
 class NodeValidatorFactory
 {

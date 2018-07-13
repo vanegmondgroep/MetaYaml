@@ -1,8 +1,8 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml;
+namespace VanEgmond\MetaYaml;
 
-use RomaricDrigon\MetaYaml\NodeValidator\NodeValidatorFactory;
+use VanEgmond\MetaYaml\NodeValidator\NodeValidatorFactory;
 
 class SchemaValidator
 {

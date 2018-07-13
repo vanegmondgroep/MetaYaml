@@ -1,6 +1,6 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\NodeValidator;
+namespace VanEgmond\MetaYaml\NodeValidator;
 
 class PartialNodeValidator extends NodeValidator
 {

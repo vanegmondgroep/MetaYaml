@@ -1,8 +1,8 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml;
+namespace VanEgmond\MetaYaml;
 
-use RomaricDrigon\MetaYaml\XsdNodeGenerator\XsdNodeGeneratorFactory;
+use VanEgmond\MetaYaml\XsdNodeGenerator\XsdNodeGeneratorFactory;
 
 class XsdGenerator
 {

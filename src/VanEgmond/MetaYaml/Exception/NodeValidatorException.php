@@ -1,6 +1,6 @@
 <?php
 
-namespace RomaricDrigon\MetaYaml\Exception;
+namespace VanEgmond\MetaYaml\Exception;
 
 class NodeValidatorException extends \Exception
 {

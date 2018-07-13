@@ -1,13 +1,13 @@
 {
-    "name": "romaricdrigon/metayaml",
+    "name": "vanegmond/meta-yaml",
     "type": "library",
     "description": "Using [Yaml|Xml|json] schemas files to validate [Yaml|Xml|json] ",
-    "homepage": "http://github.com/romaricdrigon/MetaYaml",
+    "homepage": "http://github.com/vanegmondgroep/meta-yaml",
     "keywords": ["yaml", "xml", "json", "validation", "schema"],
     "license": "MIT",
     "autoload": {
         "psr-0": {
-            "RomaricDrigon\\MetaYaml": "src/"
+            "VanEgmond\\MetaYaml": "src/"
         }
     },
     "require": {

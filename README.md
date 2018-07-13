@@ -1,15 +1,11 @@
 # MetaYaml
 
-[![Latest Stable Version](https://poser.pugx.org/romaricdrigon/metayaml/v/stable.svg)](https://packagist.org/packages/romaricdrigon/metayaml) 
-[![Build Status](https://travis-ci.org/romaricdrigon/MetaYaml.png?branch=master)](https://travis-ci.org/romaricdrigon/MetaYaml)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b61e16d7-0756-42f1-8dff-32def155f608/mini.png)](https://insight.sensiolabs.com/projects/b61e16d7-0756-42f1-8dff-32def155f608)
-
 A `[put your file type here]` schema validator using `[put another file type here]` files.  
 At the moment, file type can be Json, Yaml, or [XML](#notes-on-xml-support). It can generate a documentation about the schema, or a XSD file (experimental).
 
 _The name comes from the fact that it was initially made to implement a pseudo-schema for Yaml files._
 
-> 1. [Installation](#installation)
+1. [Installation](#installation)
 1. [Basic usage](#basic-usage)
 1. [How to write a schema](#how-to-write-a-schema)
  * [Introduction](#introduction)
@@ -31,13 +27,13 @@ It is a standalone component:
 * to use the YamlLoader, you will need the Symfony component [Yaml](https://github.com/symfony/Yaml) (standalone component, does not require Symfony2)
 * to launch the tests, you'll need [atoum](https://github.com/mageekguy/atoum)
 
-To install via [composer](http://getcomposer.org) just do `composer require romaricdrigon/metayaml`
+To install via [composer](http://getcomposer.org) just do `composer require VanEgmond/metayaml`
 
 ## Basic usage
 
 You have to create a MetaYaml object, and then pass it both the schema and your data as multidimensional php arrays:
 ```php
-use RomaricDrigon\MetaYaml\MetaYaml;
+use VanEgmond\MetaYaml\MetaYaml;
 
 // create object, load schema from an array
 $schema = new MetaYaml($schema);
@@ -60,9 +56,9 @@ You can use any of the provided loaders to obtain these arrays (yep, you can val
 
 Some loader examples:
 ```php
-use RomaricDrigon\MetaYaml\MetaYaml;
-use RomaricDrigon\MetaYaml\Loader\YamlLoader;
-use RomaricDrigon\MetaYaml\Loader\XmlLoader; // JsonLoader is already available
+use VanEgmond\MetaYaml\MetaYaml;
+use VanEgmond\MetaYaml\Loader\YamlLoader;
+use VanEgmond\MetaYaml\Loader\XmlLoader; // JsonLoader is already available
 
 // create one loader object
 $loader = new JsonLoader(); // Json (will use php json_decode)
@@ -157,8 +153,8 @@ You can specify additional attributes:
 * only for array nodes:
  * `_ignore_extra_keys`: the node can contain children whose keys are not listed in `_children`; they'll be ignored
 * only for prototype nodes:
- * `min_items`: the prototype node should contain at least 'min' elements
- * `max_items`: the opposite, the max number of elements in the prototype node (by default 200)
+ * `_min_items`: the prototype node should contain at least 'min' elements
+ * `_max_items`: the opposite, the max number of elements in the prototype node (by default 200)
 
 Here's a comprehensive example:
 ```yaml
@@ -333,7 +329,7 @@ The same conventions (cf. above) will be used.
 
 Usage example :
 ```php
-use RomaricDrigon\MetaYaml\MetaYaml\XsdGenerator;
+use VanEgmond\MetaYaml\MetaYaml\XsdGenerator;
 
 // create a XsdGenerator object (requires Php XMLWriter from libxml, enabled by default)
 $generator = new XsdGenerator();
